@@ -5,3 +5,5 @@ Well, in the past I have done such things with an Arduino, some transducers and 
 of course pushes everything to a webserver. There you can see the trend of the temperature, as well as the state of power regulation.
 
 For a connection to the real world, Tinkerforge is used (http://www.tinkerforge.com), there are other solutions out there as well, but for me this looks like the most reliable and flexible.
+
+Heater can be bought here: https://www.metro.de/marktplatz/product/43d40489-55fa-403a-9f8f-25c2690481e7 the button contact pins must be soldered to a tinkerforge relais...
