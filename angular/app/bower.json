@@ -18,10 +18,10 @@
   ],
   "dependencies":{
     "bootstrap":"*",
-    "jquery":"*",
-    "jquery-flot":"*",
+    "jquery":"1.x",
+    "jquery-flot":"0.x",
     "angular":"1.2.x",
     "angular-route":"~1.2.x",
-    "angular-flot":"*"
+    "angular-flot":"0.0.1"
   }
 }

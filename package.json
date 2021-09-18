@@ -8,11 +8,11 @@
     "url": "https://github.com/shitzensreal"
   },
   "dependencies": {
-    "tinkerforge":"*",
-    "node-pid-controller":"*",
-    "express":"*",
-    "body-parser":"*",
-    "q":"*",
-    "serve-static":"*"
+    "tinkerforge": "*",
+    "node-pid-controller": "*",
+    "express": "*",
+    "body-parser": "*",
+    "q": "*",
+    "serve-static": "*"
   }
 }
