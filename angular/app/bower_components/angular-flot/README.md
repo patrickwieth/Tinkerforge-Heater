@@ -1,10 +1,15 @@
-angular-flot
-============
+# angular-flot
 
-An Angular directive which wraps [Flotcharts](http://www.flotcharts.org/).
+<img src="https://rawgit.com/develersrl/angular-flot/master/logo.svg" align="right" width="200" height="200"/>
+
+[![Bower](https://img.shields.io/bower/v/angular-flot.svg?style=flat)](https://github.com/develersrl/angular-flot)
+[![npm](https://img.shields.io/npm/v/angular-flot.svg?style=flat)](https://www.npmjs.com/package/angular-flot)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
+
+An Angular directive that wraps [Flotcharts](http://www.flotcharts.org/).
 
 
-# Installation
+## Installation
 
 This library is provided as a Bower component and NPM module:
 
@@ -12,13 +17,13 @@ This library is provided as a Bower component and NPM module:
 - NPM: `npm install angular-flot`
 
 
-# How to Use
+## How to Use
 
-First, make sure to add Flotchart to your project, as explained in [Flotchart's
-ReadMe](https://github.com/flot/flot/blob/master/README.md) since we don't bundle Flotcharts for
-you.
+First, make sure to add Flotchart to your project, as explained in
+[Flotchart's ReadMe](https://github.com/flot/flot/blob/master/README.md) since we don't bundle
+Flotcharts for you.
 
-Add `angular-beacon` to the list of dependencies in your Angular.JS application:
+Add `angular-flot` to the list of dependencies in your Angular.JS application:
 
 ```javascript
 angular.module('myapp', [
@@ -43,3 +48,26 @@ In your view or template, add the `flot` directive, making sure to specify both 
 ```html
 <flot dataset="myData" options="myChartOptions"></flot>
 ```
+
+The Flot chart is created in a `div` element as a child of the `flot` directive. To select the DOM
+element using jQuery, just do as follows (you might have to adjust the example based on the contents
+of your page):
+
+```javascript
+$('flot > div');
+```
+
+## Reference
+
+Directive attributes:
+
+* `dataset`: Name of a variable defined in the current $scope to be used as input dataset. See
+  <https://github.com/flot/flot/blob/master/API.md#data-format> for more information.
+* `options`: Name of an object defined in the current scope used to configure the chart. See
+  <https://github.com/flot/flot/blob/master/API.md#plot-options> for more information.
+* `on-plot-click`: callback function for the 'plotclick' event.
+* `on-plot-hover`: callback function for the 'plothover' event.
+* `on-plot-selected`: callback function for the 'plotselected' event.
+* `width`: Chart width, e.g.: "100%" or "350px".
+* `height`: Chart height, e.g.: "100%" or "100px".
+* `callback`: callback function with flot object.

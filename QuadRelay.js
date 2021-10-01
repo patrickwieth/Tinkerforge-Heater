@@ -8,7 +8,7 @@ var Tinkerforge = require('tinkerforge');
 var HOST = 'localhost';
 var PORT = 4223;
 var UID = 'mUn';
-var delay = 600; // relay delay in ms
+var delay = 1000; // relay delay in ms
 
 var ipcon = new Tinkerforge.IPConnection(); // Create IP connection
 var iqr = new Tinkerforge.BrickletIndustrialQuadRelay(UID, ipcon); // Create device object

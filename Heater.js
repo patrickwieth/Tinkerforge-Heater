@@ -34,7 +34,10 @@ function setPower(value){
 }
 
 function turnOn() {
-    if(!heaterOn) pressOnOff();
+    if(!heaterOn) {
+      pressOnOff();
+      heatButton();
+    }
 }
 
 function turnOff() {
@@ -85,6 +88,10 @@ function pressPowerDown(){
 
 function onOff() {
     relay.flop(1);
+}
+
+function heatButton() {
+    relay.flop(2);
 }
 
 function powerUp() {

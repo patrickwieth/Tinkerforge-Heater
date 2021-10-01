@@ -9,7 +9,7 @@ exports.setTarget = setTarget;
 exports.getCorrection = getCorrection;
 
 // parameters are k_P, k_I and k_D, where P is proportional, I integral and D differential
-var ctr = new Controller(0.15, 0.01, 0.08);
+var ctr = new Controller(0.20, 0.00, 2.5);    // integral was 0.01, is now disabled
 var correction = -1;
 
 function feed(data) {

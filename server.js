@@ -62,8 +62,6 @@ function processPostData(data) {
 
 
 
-
-
 // heater power in W (a good value is the average of the power range, assumption ^^)
 var heaterAvgPower = 1000;
 // minimal and maximal values of heater
@@ -112,4 +110,3 @@ process.on('exit', function(code) {
     pt100.disconnect();
     heater.disconnect();
 });
-
